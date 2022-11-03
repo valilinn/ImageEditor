@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct ContentView: View {
     var body: some View {
@@ -13,12 +14,15 @@ struct ContentView: View {
             Color.black
                 .ignoresSafeArea()
             VStack {
-                Image("duck")
-                    .resizable()
+                LottieView()
                     .frame(width: 170, height: 140)
-                
+                    .offset(y: -50)
+                    
+            }
+            
+            VStack {
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 170)
                 
                 Text("Access Your Photos and Videos")
                     .font(.title2 .bold())
@@ -36,6 +40,7 @@ struct ContentView: View {
                 .background(Color.blue)
                 .cornerRadius(10)
             }
+            .preferredColorScheme(.dark)
         }
     }
 }

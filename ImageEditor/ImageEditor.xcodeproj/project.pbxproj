@@ -11,6 +11,10 @@
 		EA6231722912F209007A5A15 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6231712912F209007A5A15 /* ContentView.swift */; };
 		EA6231742912F20D007A5A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6231732912F20D007A5A15 /* Assets.xcassets */; };
 		EA6231772912F20D007A5A15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6231762912F20D007A5A15 /* Preview Assets.xcassets */; };
+		EA8ADFBF2914660C0097F095 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = EA8ADFBE2914660C0097F095 /* Algorithms */; };
+		EA8ADFC2291467A20097F095 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EA8ADFC1291467A20097F095 /* Lottie */; };
+		EA8ADFC429146AEF0097F095 /* duck.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8ADFC329146AEF0097F095 /* duck.json */; };
+		EA8ADFC629146C0F0097F095 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8ADFC529146C0F0097F095 /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,8 @@
 		EA6231712912F209007A5A15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA6231732912F20D007A5A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6231762912F20D007A5A15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA8ADFC329146AEF0097F095 /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
+		EA8ADFC529146C0F0097F095 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA8ADFBF2914660C0097F095 /* Algorithms in Frameworks */,
+				EA8ADFC2291467A20097F095 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				EA62316F2912F209007A5A15 /* ImageEditorApp.swift */,
+				EA8ADFC529146C0F0097F095 /* LottieView.swift */,
 				EA6231712912F209007A5A15 /* ContentView.swift */,
+				EA8ADFC329146AEF0097F095 /* duck.json */,
 				EA6231732912F20D007A5A15 /* Assets.xcassets */,
 				EA6231752912F20D007A5A15 /* Preview Content */,
 			);
@@ -83,6 +93,10 @@
 			dependencies = (
 			);
 			name = ImageEditor;
+			packageProductDependencies = (
+				EA8ADFBE2914660C0097F095 /* Algorithms */,
+				EA8ADFC1291467A20097F095 /* Lottie */,
+			);
 			productName = ImageEditor;
 			productReference = EA62316C2912F209007A5A15 /* ImageEditor.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,10 @@
 				Base,
 			);
 			mainGroup = EA6231632912F209007A5A15;
+			packageReferences = (
+				EA8ADFBD2914660C0097F095 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				EA8ADFC0291467A20097F095 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = EA62316D2912F209007A5A15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6231772912F20D007A5A15 /* Preview Assets.xcassets in Resources */,
+				EA8ADFC429146AEF0097F095 /* duck.json in Resources */,
 				EA6231742912F20D007A5A15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +158,7 @@
 			files = (
 				EA6231722912F209007A5A15 /* ContentView.swift in Sources */,
 				EA6231702912F209007A5A15 /* ImageEditorApp.swift in Sources */,
+				EA8ADFC629146C0F0097F095 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +286,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageEditor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -294,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageEditor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -337,6 +359,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA8ADFBD2914660C0097F095 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		EA8ADFC0291467A20097F095 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA8ADFBE2914660C0097F095 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA8ADFBD2914660C0097F095 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		EA8ADFC1291467A20097F095 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA8ADFC0291467A20097F095 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA6231642912F209007A5A15 /* Project object */;
 }
