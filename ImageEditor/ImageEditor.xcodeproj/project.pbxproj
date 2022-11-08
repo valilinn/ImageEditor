@@ -13,7 +13,7 @@
 		EA6231772912F20D007A5A15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6231762912F20D007A5A15 /* Preview Assets.xcassets */; };
 		EA8ADFBF2914660C0097F095 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = EA8ADFBE2914660C0097F095 /* Algorithms */; };
 		EA8ADFC2291467A20097F095 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EA8ADFC1291467A20097F095 /* Lottie */; };
-		EA8ADFC429146AEF0097F095 /* duck.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8ADFC329146AEF0097F095 /* duck.json */; };
+		EA8ADFC429146AEF0097F095 /* duck@2x.json in Resources */ = {isa = PBXBuildFile; fileRef = EA8ADFC329146AEF0097F095 /* duck@2x.json */; };
 		EA8ADFC629146C0F0097F095 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8ADFC529146C0F0097F095 /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,7 @@
 		EA6231712912F209007A5A15 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA6231732912F20D007A5A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA6231762912F20D007A5A15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EA8ADFC329146AEF0097F095 /* duck.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = duck.json; sourceTree = "<group>"; };
+		EA8ADFC329146AEF0097F095 /* duck@2x.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "duck@2x.json"; sourceTree = "<group>"; };
 		EA8ADFC529146C0F0097F095 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,7 @@
 				EA62316F2912F209007A5A15 /* ImageEditorApp.swift */,
 				EA8ADFC529146C0F0097F095 /* LottieView.swift */,
 				EA6231712912F209007A5A15 /* ContentView.swift */,
-				EA8ADFC329146AEF0097F095 /* duck.json */,
+				EA8ADFC329146AEF0097F095 /* duck@2x.json */,
 				EA6231732912F20D007A5A15 /* Assets.xcassets */,
 				EA6231752912F20D007A5A15 /* Preview Content */,
 			);
@@ -144,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6231772912F20D007A5A15 /* Preview Assets.xcassets in Resources */,
-				EA8ADFC429146AEF0097F095 /* duck.json in Resources */,
+				EA8ADFC429146AEF0097F095 /* duck@2x.json in Resources */,
 				EA6231742912F20D007A5A15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

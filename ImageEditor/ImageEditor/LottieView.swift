@@ -8,16 +8,66 @@
 import SwiftUI
 import Lottie
 
+
 struct LottieView: UIViewRepresentable {
-    func makeUIView(context: Context) -> some LottieAnimationView {
-        let lottieAnimationView = LottieAnimationView(name: "duck")
-        lottieAnimationView.contentMode = .scaleAspectFit
-        lottieAnimationView.loopMode = .loop
-        lottieAnimationView.play()
-        return lottieAnimationView
+    var name = "success"
+
+    func makeUIView(context: UIViewRepresentableContext<LottieView>) -> UIView {
+        let view = UIView()
+
+        let animationView = LottieAnimationView()
+        let animation = Animation.named(name)
+        animationView.animation = animation
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.play()
+
+        animationView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(animationView)
+        NSLayoutConstraint.activate([
+            animationView.heightAnchor.constraint(equalTo: view.heightAnchor),
+            animationView.widthAnchor.constraint(equalTo: view.widthAnchor)
+        ])
+
+        return view
     }
-    
+
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//import SwiftUI
+//import Lottie
+//
+//struct LottieView: UIViewRepresentable {
+//    var name: String!
+//
+//    func makeUIView(context: Context) -> some LottieAnimationView {
+//        let lottieAnimationView = LottieAnimationView()
+//        lottieAnimationView.animation = Animation.named(name)
+//        lottieAnimationView.contentMode = .scaleAspectFit
+//        lottieAnimationView.loopMode = .loop
+//        lottieAnimationView.play()
+//
+//        return lottieAnimationView
+//    }
+//
+//    func updateUIView(_ uiView: UIViewType, context: Context) {
+//
+//    }
+//}

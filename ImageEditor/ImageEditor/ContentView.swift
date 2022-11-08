@@ -14,15 +14,15 @@ struct ContentView: View {
             Color.black
                 .ignoresSafeArea()
             VStack {
-                LottieView()
-                    .frame(width: 170, height: 140)
-                    .offset(y: -50)
-                    
+                LottieView(name: "duck@2x")
+                    .frame(width: 190, height: 150)
+                    .offset(y: -90)
+                
             }
             
             VStack {
                 Spacer()
-                    .frame(height: 170)
+                    .frame(height: 130)
                 
                 Text("Access Your Photos and Videos")
                     .font(.title2 .bold())
